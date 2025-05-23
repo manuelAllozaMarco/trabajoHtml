@@ -56,7 +56,9 @@
 
 					<form method="post" id="Formulario" name="Formulario" class="form-grid">
 
-						<div class="main-title">FORMULARIO</div>
+						<div class="div-main-title">FORMULARIO</div>
+
+						<br>
 						
 						<h3>RELLENA LOS SIGUIENTES CAMPOS:</h3>
 
@@ -72,10 +74,10 @@
 							<label for="APELLIDO">* Apellido:</label>
 							<input id="APELLIDO" name="APELLIDO" class="textbox" type="text" maxlength="40" placeholder="Tu apellido" required>
 						</div>
-
+						<!--Añado el pattern para verificar que los datos introducidos sean 9 digitos-->
 						<div class="form-row">
    	 						<label for="TELEFONO">* Teléfono de contacto:</label>
-    						<input id="TELEFONO" name="TELEFONO" class="textbox" type="tel" maxlength="9" placeholder="Móvil o Fijo" required>
+    						<input id="TELEFONO" name="TELEFONO" class="textbox" type="tel" maxlength="9" pattern="^[0-9]{9}$" placeholder="Móvil o Fijo" required>
   						</div>
 
   						<div class="form-row">

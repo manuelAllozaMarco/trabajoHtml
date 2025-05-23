@@ -5,6 +5,8 @@
 /* Importación de Google Font "Open Sans" */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
+/*Estilos para Etiquitas globales del html*/
+
 html, body {
 	margin:0;
 	padding:0px;
@@ -14,6 +16,9 @@ html, body {
 	/*background:url(../img/fondo.jpg) no-repeat fixed center top;*/
 	background-size:100% auto;
 	line-height:18px;
+	flex-direction: column;
+	display: flex;
+	min-height: 100vh;
 }
 
 header{
@@ -39,10 +44,16 @@ h1,h2,h4 {
 /* Modificación del comportamiento de los párrafos */
 p {
 	text-align: justify;
+	color: #020202;
+	font-weight: bold;
 }
 
 form{
 	font-weight: bold;
+}
+
+img {
+	max-width: 100%;
 }
 
 section {
@@ -54,7 +65,7 @@ section {
 }
 
 footer{
-	position: sticky;
+	flex: 1;
 	bottom: 0;
 	width: 100%;
 	background-color: #020202;
@@ -63,14 +74,7 @@ footer{
 	padding: 20px 0;
 }
 
-.textbox{
-	border-radius: 1px 1px 1px 1px;
-	-moz-border-radius: 1px 1px 1px 1px;
-	-webkit-border-radius: 1px 1px 1px 1px;
-	border: 1px solid #c0c5ce;
-	height: 28px;
-	color: black;
-}
+/*Estilos para los distintos DIVs de la pagina*/
 
 /*Div que contiene la página*/
 .div_container{
@@ -83,12 +87,36 @@ footer{
 }
 
 /*Estilos para el div que contiene los titulos de cada html*/
-.main-title{
+.div-main-title{
 	margin-top: 5rem;
 	margin-bottom: 1rem;
 	text-align: center;
 	color: #020202;
 	font-size: 3rem;
+}
+/*Estilos para titulos mas pequeños*/
+.div-middle-title{
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	color: #020202;
+	font-size: 2rem;
+}
+
+/*Estilo para la imagen principal del Index.html*/
+.div-main-img{
+	margin-top: 50px;
+	text-align: center;
+	width: 100%;
+	vertical-align: center;
+	height: auto;
+	display: block;
+
+}
+
+/*Estilo para las noticias en el Index.html*/
+.div-news{
+	margin-top: 50px;
 }
 
 #div_main_section{
@@ -100,15 +128,16 @@ footer{
 	background-color:#f49d37;
 }
 
+/*Estilos para el div del formulario*/
 #div_form{
 	background-color: #f49d37;
 	border: 1px solid black;
 	margin-top: 70px;
 	padding: 30px;
-	font-weight: bold;
 	height: 690PX;
 }
- /*Pagina de contacto*/
+
+/*Pagina de contacto*/
 #div_contacto{ 
 	border: 1px solid black;
 	margin-top: 70px;
@@ -150,26 +179,35 @@ footer{
 /*Div del pie de página*/
 #div_footer {
 	border: 1px solid black; 
+	color:#f0f6f6
 	font-size:12px;
 	position:relative;
 	box-sizing:border-box;
 	clear:both;
-	color: black;
 	text-align:center;
 	padding: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
 }
 
 /* Div del menú de la página */
 .div_menu {
 	text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 	text-align:center;
-	height: 30px;
+	height: 45px;
 	width: 100%;
 	padding: 30px;
 	position:fixed;
 	font-family: 'Open Sans', sans-serif;
 	color:white;
 	background-color: black;
+	/*Para que el menu se adapate a distintas pantallas*/
+	display: flex;
+	justify-content: center;
+	align-items: center
+	flex-wrap: wrap;
 }
 
 /* css para los fondo de imagenes de las distintas vistas */
@@ -188,6 +226,16 @@ footer{
 .div_fondo_imagen_contact{
 	background-image: url("../img/theLastOfUsFondo.jpg");
 }
+
+.textbox{
+	border-radius: 1px 1px 1px 1px;
+	-moz-border-radius: 1px 1px 1px 1px;
+	-webkit-border-radius: 1px 1px 1px 1px;
+	border: 1px solid #c0c5ce;
+	height: 28px;
+	color: black;
+}
+
 
 /*Estilos para la Barra de Navegacion*/
 
@@ -271,64 +319,6 @@ footer{
 	vertical-align: middle;
 	margin: 0 5px;
 }
-
-/*******************************************************/
-/*  Inicio de definición de estilos para el formulario */
-/*******************************************************/
-/*
-.boton_form {
-	text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-	text-align:center;
-	text-decoration: none;
-	font-family: 'Open Sans', sans-serif;
-	display:inline-block;
-	color: #FFF;
-	background: #7abcff; 
-	padding: 6px 30px;
-	white-space: nowrap;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	margin: 10px 5px;
-	-webkit-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-
-.morado{
-	background: #7abcff;
-	border: 1px solid #1488FF; 
-}
-
-.morado:hover{
-	background: #ADD5FF;
-}
-
-.caja_gris{
-	margin: 10 10 5px;
-	position:  
-	overflow: hidden;
-	padding: 4px;
-	background-color: #F2F2F2;
-	border: 1px solid #6E6E6E;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.register_form{
-	border: 1px solid;
-	position:absolute;
-	margin-top: 270px;
-	margin-left: 140px;
-	padding-left: 80px;
-	margin-right: 140px;
-	padding-right: 120px;
-}
-*/
-/****************************************************/
-/*  Fin de definición de estilos para el formulario */ 
-/****************************************************/
 
 /*Esilos para el formulario de presupuesto*/
 

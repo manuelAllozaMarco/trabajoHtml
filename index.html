@@ -11,6 +11,8 @@
 <meta name="keywords" content="Videojuegos, criticas y compras">
 <meta name="revisit-after" content="2 days">
 <meta name="category" content="Prácticas">
+<!--Etiqueta meta para que la pagina se adapte en dispositivos pequeños-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Declaración de fichero de estilos -->
 <link rel="stylesheet" type="text/css" href="css/estilos.css">
@@ -51,39 +53,46 @@
 			<!-- html para crear el contenido central de la pagina con una imagen de fondo -->
 
 				<div id="div_main_section">
-					<article>
-
-						<!--Creo el header del index.html-->
-						<header>
-							<div class="main-title">
-								GGAMERS
-							</div>
-						</header>
-						
-						<!-- Parrafos con información-->
-						<p style=" color: #020202;  font-weight: bold;">
-								
-								Los videojuegos se destacan como una forma de entretenimiento incomparable debido a su capacidad única para sumergir a los jugadores en mundos fascinantes y experiencias interactivas. A través de la combinación de gráficos avanzados, narrativas envolventes y tecnología innovadora, los videojuegos ofrecen una escapatoria inigualable de la realidad. Además, fomentan el desarrollo de habilidades cognitivas, como la toma de decisiones rápida, la resolución de problemas y la coordinación mano-ojo.
-
-						</p>
-						<p style=" color: #020202;  font-weight: bold;">
-
-							La diversidad de géneros dentro de los videojuegos permite que personas de todas las edades y gustos encuentren títulos que se adapten a sus preferencias. Desde juegos de acción emocionantes hasta experiencias relajantes y creativas, la variedad es ilimitada. Además, los videojuegos actuales fomentan la conexión social, ya sea a través del juego en línea con amigos o la participación en comunidades virtuales.
-
-						</p>
-
-						<p style=" color: #020202;  font-weight: bold;">
-
-							La industria de los videojuegos ha demostrado ser un poderoso medio de expresión artística, fusionando música, diseño gráfico y narrativa de manera única. En última instancia, los videojuegos ofrecen una experiencia holística y enriquecedora que trasciende la mera diversión, convirtiéndolos en una de las formas más cautivadoras y emocionantes de entretenimiento contemporáneo.
-
-						</p>
-
-						<div style="text-align: center;">
-							<img src="img/gta6.jpg" alt="Imagen en grande de la portada de GTA6">
+					<!--Creo el header del index.html-->
+					<header>
+						<div class="div-main-title">
+							GGAMERS
 						</div>
+					</header>
 						
-					</article>
-
+					<div>
+						<!-- Parrafos con información-->
+						<p>
+							Los videojuegos se destacan como una forma de entretenimiento incomparable debido a su capacidad única para sumergir a los jugadores en mundos fascinantes y experiencias interactivas. A través de la combinación de gráficos avanzados, narrativas envolventes y tecnología innovadora, los videojuegos ofrecen una escapatoria inigualable de la realidad. Además, fomentan el desarrollo de habilidades cognitivas, como la toma de decisiones rápida, la resolución de problemas y la coordinación mano-ojo.
+						</p>
+						<p>
+							La diversidad de géneros dentro de los videojuegos permite que personas de todas las edades y gustos encuentren títulos que se adapten a sus preferencias. Desde juegos de acción emocionantes hasta experiencias relajantes y creativas, la variedad es ilimitada. Además, los videojuegos actuales fomentan la conexión social, ya sea a través del juego en línea con amigos o la participación en comunidades virtuales.
+						</p>
+						<p>
+							La industria de los videojuegos ha demostrado ser un poderoso medio de expresión artística, fusionando música, diseño gráfico y narrativa de manera única. En última instancia, los videojuegos ofrecen una experiencia holística y enriquecedora que trasciende la mera diversión, convirtiéndolos en una de las formas más cautivadoras y emocionantes de entretenimiento contemporáneo.
+						</p>
+					</div>
+					
+					<div class="div-main-img">
+						<img src="img/gta6.jpg" alt="Imagen en grande de la portada de GTA6">
+					</div>
+					
+					<div class="div-news">
+						<div class="div-middle-title">
+							GRAND THEFT AUTO 6 COMING....
+						</div>
+						<p>
+							Enhorabuena jugadores tenemos fechaaaa!!!
+						</p>
+						<p>
+							Rockstar Games ha confirmado que Grand Theft Auto VI (GTA 6) se lanzará el 26 de mayo de 2026 para PlayStation 5 y Xbox Series X|S. Este anuncio marca un retraso respecto a la fecha inicial prevista para otoño de 2025, una decisión que la compañía atribuye a la necesidad de alcanzar la calidad esperada por los jugadores.
+							GTA 6 nos transportará al estado ficticio de Leonida, inspirado en Florida, con una Vice City modernizada como epicentro. La historia sigue a Lucia Caminos, la primera protagonista femenina de la saga, y a su pareja Jason Duval, en una narrativa que recuerda a la de Bonnie y Clyde.
+							El segundo tráiler, publicado el 6 de mayo de 2025, profundiza en la relación entre Lucia y Jason, mostrando escenas que combinan momentos íntimos y actividades criminales. La comunidad ha elogiado la calidad gráfica y la representación equilibrada entre cinemáticas y gameplay, con un análisis que identifica 26 escenas cinemáticas y 27 de juego .
+							Aunque inicialmente se esperaba un lanzamiento en otoño de 2025, el CEO de Take-Two, Strauss Zelnick, explicó que el desarrollo serio del juego comenzó en 2020 y que la decisión de posponer su lanzamiento responde a la necesidad de alcanzar la visión creativa del estudio sin limitaciones .
+							GTA 6 se perfila como uno de los lanzamientos más esperados de la década, prometiendo una experiencia de mundo abierto más realista y detallada que nunca. La expectación es alta, y los fans esperan que la espera valga la pena.
+						</p>
+					</div>
+						
 				</div>
 
 			</section>
@@ -93,7 +102,7 @@
 
 	<!--Html del pie de pagina-->
 	<footer>
-  		<div id="div_footer" style="color:#f0f6f6">
+  		<div id="div_footer">
   			<!-- Uso las etiquetas a para convertir los iconos en un enlace para las distintas redes sociales-->
     		<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
       			<img src="img/instagram.png" class="footer-icon" alt="Icono instagram">
