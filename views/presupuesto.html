@@ -11,12 +11,13 @@
 <meta name="keywords" content="Videojuegos, criticas y compras">
 <meta name="revisit-after" content="2 days">
 <meta name="category" content="Prácticas">
+<!--Etiqueta meta para que la pagina se adapte en dispositivos pequeños-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <!-- Declaración de fichero de estilos -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-<script src="../js/javascript.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+
 <title>Focus Gaming - Contacto</title>
 
 </head>
@@ -28,21 +29,15 @@
 		<header>
 			
 			<!-- html para crear la barra de navegacion de la parte superior de la pagina web-->
-			<nav>				
+			<nav>	
 				<div class="div_menu">
-					<img src="../img/logo1.png" class="logo-nav" alt="Imagen de un mando">	
-					<span class="button_nav">
-						<a href="../index.html" style="color:#020202 ;" >Índice</a>
-					</span>	
-					<span class="button_nav">
-						<a href="galery.html" style="color:#020202 ;">Videojuegos</a>
-					</span>
-					<span class="button_nav_in">
-						<a href="#" style="color:#020202 ;">Presupuesto</a>
-					</span>
-					<span class="button_nav">
-						<a href="contact.html" style="color:#020202 ;">Contacto</a>
-					</span>				
+					<img src="../img/logo1.png" class="logo-nav" height="20" width="20" alt="Imagen de un mando">	
+					<ul class="menu-nav">
+						<li><a href="../index.html" class="button_nav">Índice</a></li>
+						<li><a href="productos.html" class="button_nav">Videojuegos</a></li>
+						<li><a href="#" class="button_nav_in">Presupuesto</a></li>
+						<li><a href="contact.html" class="button_nav">Contacto</a></li>
+					</ul>
 				</div>
 			</nav>
 
@@ -67,22 +62,22 @@
 						<!--Cada div se comforma de dos partes una label para saber el campo que vamos a rellenar y un input para introducir la informacion-->
 						<div class="form-row">
 							<label for="NOMBRE">* Nombre:</label>
-							<input id="NOMBRE" name="NOMBRE" class="textbox" type="text" maxlength="15" placeholder="Tu nombre" required>
+							<input id="NOMBRE" name="NOMBRE" class="textbox" type="text" maxlength="15" placeholder="Tu nombre" pattern="^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]{1,15}$" required>
 						</div>
 
 						<div class="form-row">
 							<label for="APELLIDO">* Apellido:</label>
-							<input id="APELLIDO" name="APELLIDO" class="textbox" type="text" maxlength="40" placeholder="Tu apellido" required>
+							<input id="APELLIDO" name="APELLIDO" class="textbox" type="text" maxlength="40" placeholder="Tu apellido" pattern="^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]{1,40}$" required>
 						</div>
 						<!--Añado el pattern para verificar que los datos introducidos sean 9 digitos-->
 						<div class="form-row">
    	 						<label for="TELEFONO">* Teléfono de contacto:</label>
-    						<input id="TELEFONO" name="TELEFONO" class="textbox" type="tel" maxlength="9" pattern="^[0-9]{9}$" placeholder="Móvil o Fijo" required>
+    						<input id="TELEFONO" name="TELEFONO" class="textbox" type="tel" maxlength="9" placeholder="Móvil o Fijo" pattern="^[0-9]{9}$" required>
   						</div>
 
   						<div class="form-row">
 						    <label for="E-MAIL">* E-mail:</label>
-						    <input id="E-MAIL" name="E-MAIL" class="textbox" type="email" maxlength="50" placeholder="tu@email.com" required>
+						    <input id="E-MAIL" name="E-MAIL" class="textbox" type="email" maxlength="50" placeholder="tu@email.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
 						</div>
 
 						<div class="form-row">

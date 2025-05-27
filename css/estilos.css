@@ -30,6 +30,10 @@ a,a:visited{
 	text-decoration: none;
 }
 
+a{
+	color:#020202;
+}
+
 /* Modificación del comportamiento del encabezado 1 */
 h1 {
 	font-size: 35px;
@@ -103,15 +107,21 @@ footer{
 	font-size: 2rem;
 }
 
+/*Estilos para texto con imagen al lado*/
+.div-texto-imagen{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
 /*Estilo para la imagen principal del Index.html*/
 .div-main-img{
 	margin-top: 50px;
 	text-align: center;
-	width: 100%;
-	vertical-align: center;
+	width: 100%;	
 	height: auto;
+	vertical-align: center;
 	display: block;
-
 }
 
 /*Estilo para las noticias en el Index.html*/
@@ -126,6 +136,20 @@ footer{
 	padding-right: 30px;
 	padding-bottom: 30px;
 	background-color:#f49d37;
+}
+
+/*Estilos para la imagen de Malenia*/
+#imagen-malenia{
+	width: 100%;
+	height: 100%;
+	max-width: 500px;
+	max-height: 1000px;
+}
+
+/*Estilos imagen div main*/
+#img-main{
+	width: 100%;
+	height: 100%;
 }
 
 /*Estilos para el div del formulario*/
@@ -239,6 +263,20 @@ footer{
 
 /*Estilos para la Barra de Navegacion*/
 
+.menu-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu-nav li {
+  margin: 0;
+  padding: 0;
+}
+
 /* Estilos comunes de los botones de navegación */
 .button_nav,.button_nav:hover,.button_nav_in,.button_nav_in:hover {
 	text-decoration-color: #f49d37;
@@ -264,6 +302,7 @@ footer{
 }
 
 .button_nav_in {
+	color: ;
 	border-color:yellow ;
 	background: linear-gradient(to bottom, #ffffff 0%,#f49d37 44%,#f49d37 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 ); /* IE6*/
@@ -277,7 +316,8 @@ footer{
 /*Estilo para el Logotipo de la barra de navegacion*/
 .logo-nav{
 	margin-right: 20px;
-	height: 40px; 
+	height: 45px; 
+	width: 70px;
 	align: center;
 }
 
