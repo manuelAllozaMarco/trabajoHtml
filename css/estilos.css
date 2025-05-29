@@ -234,6 +234,21 @@ footer{
 	flex-wrap: wrap;
 }
 
+/*Estilos menu*/
+.menu-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu-nav li {
+  margin: 0;
+  padding: 0;
+}
+
 /* css para los fondo de imagenes de las distintas vistas */
 .div_fondo_imagen_index{
 	background-image: url("../img/daysGoneFondo.jpg");
